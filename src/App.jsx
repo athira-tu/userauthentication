@@ -12,7 +12,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/login' element={<Login />} />
+          <Route path='/login' element={<Login user={user} />} />
           <Route path='/signup' element={<Signup setuser={setuser} />} />
         </Routes>
       </BrowserRouter>
@@ -21,5 +21,6 @@ function App() {
 }
 
 export default App
+
 
 
